@@ -28,7 +28,6 @@ public class MedicalHistoryRecordController {
         return medicalHistoryRecordService.getAll();
     }
 
-
     @PostConstruct
     private void init() {
       MedicalHistoryRecord medicalHistoryRecord = new MedicalHistoryRecord();
