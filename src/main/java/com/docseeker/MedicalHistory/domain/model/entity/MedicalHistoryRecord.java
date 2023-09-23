@@ -15,6 +15,7 @@ import java.util.List;
 @Getter
 @Setter
 public class MedicalHistoryRecord {
+  
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
