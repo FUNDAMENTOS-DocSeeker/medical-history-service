@@ -92,10 +92,10 @@ public class MedicalHistoryTest {
   public void testGetAppointmentsByPatientId() {
     int patientId = 1;
 
-    List<Object[]> expectedAppointments = new ArrayList<>();
+    List<MedicalHistoryRecord> expectedAppointments = new ArrayList<>();
     when(medicalHistoryRecordRepository.getAppointmentsByPatientId(patientId)).thenReturn(expectedAppointments);
 
-    List<Object[]> actualAppointments = medicalHistoryRecordService.getAppointmentsByPatientId(patientId);
+    List<MedicalHistoryRecord> actualAppointments = medicalHistoryRecordService.getAppointmentsByPatientId(patientId);
 
     assertEquals(expectedAppointments.size(), actualAppointments.size());
   }
