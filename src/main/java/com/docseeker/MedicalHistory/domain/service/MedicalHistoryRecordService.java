@@ -12,7 +12,5 @@ public interface MedicalHistoryRecordService {
     MedicalHistoryRecord save(MedicalHistoryRecord medicalHistoryRecord);
     MedicalHistoryRecord update(MedicalHistoryRecord medicalHistoryRecord);
     boolean deleteById(Integer id);
-    //List<Object[]> getAppointmentsByPatientId(@PathVariable int patientId);
-
-    List<MedicalHistoryRecord> getAppointmentsByPatientId(@PathVariable int patientId);
+    List<Object[]> getAppointmentsByPatientId(@PathVariable int patientId);
 }

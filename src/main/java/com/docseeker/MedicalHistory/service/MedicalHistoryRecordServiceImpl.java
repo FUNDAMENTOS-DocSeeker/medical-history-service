@@ -49,13 +49,8 @@ public class MedicalHistoryRecordServiceImpl implements MedicalHistoryRecordServ
         return false;
     }
 
-    /*@Override
+    @Override
     public List<Object[]> getAppointmentsByPatientId(@PathVariable int patientId) {
       return medicalHistoryRecordRepository.getAppointmentsByPatientId(patientId);
-    }*/
-
-    @Override
-    public List<MedicalHistoryRecord> getAppointmentsByPatientId(@PathVariable int patientId) {
-        return medicalHistoryRecordRepository.getAppointmentsByPatientId(patientId);
     }
 }

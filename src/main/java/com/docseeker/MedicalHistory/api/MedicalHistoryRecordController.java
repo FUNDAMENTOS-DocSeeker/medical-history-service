@@ -70,14 +70,8 @@ public class MedicalHistoryRecordController {
         }
     }
 
-    /*@GetMapping("/patient/{patientId}")
+    @GetMapping("/patient/{patientId}")
     public List<Object[]> getAppointmentsByPatientId(@PathVariable Integer patientId) {
       return medicalHistoryRecordService.getAppointmentsByPatientId(patientId);
-    }*/
-
-    @GetMapping("/patient/{patientId}")
-    public List<MedicalHistoryRecord> getAppointmentsByPatientId(@PathVariable Integer patientId) {
-        return medicalHistoryRecordService.getAppointmentsByPatientId(patientId);
     }
-
 }
